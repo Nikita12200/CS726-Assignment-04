@@ -55,8 +55,6 @@ def main():
         'rational_quadratic': (rational_quadratic_kernel, 'Rational Quadratic')
     }
     acquisition_strategies = {
-        'None': None,
-        'Random': lambda mu, sigma, y_best: np.random.randint(len(mu)),
         'EI': expected_improvement,
         'PI': probability_of_improvement
     }
